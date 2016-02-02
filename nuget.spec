@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.mono
 Summary:	Package manager for .NET/Mono development platform
 Summary(pl.UTF-8):	Zarządca pakietów dla platformy programistycznej .NET/Mono
 Name:		nuget
@@ -14,6 +15,7 @@ Source2:	%{name}.sh
 Patch0:		%{name}-fix_xdt_hintpath
 URL:		http://nuget.org/
 BuildRequires:	mono-devel >= 4.0
+BuildRequires:	rpmbuild(monoautodeps)
 BuildRequires:	sed >= 4.0
 Requires:	dotnet-nuget = %{version}-%{release}
 ExclusiveArch:	%{ix86} %{x8664} arm aarch64 ia64 mips ppc ppc64 s390x sparc sparcv9 sparc64
