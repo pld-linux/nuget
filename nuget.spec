@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.mono
 Summary:	Package manager for .NET/Mono development platform
 Summary(pl.UTF-8):	Zarządca pakietów dla platformy programistycznej .NET/Mono
 Name:		nuget
